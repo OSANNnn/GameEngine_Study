@@ -1,8 +1,9 @@
 #pragma once
+#include "Engpch.h"
+#include "Engine/Core.h"
 
-#include "../Core.h"
-#include <string>
-#include <functional>
+#include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 namespace Engine {
 	//event dont get pooled just get executed
@@ -74,8 +75,14 @@ namespace Engine {
 		Event& m_Event;
 	};
 
-	inline std::ostream& operator<<(std::ostream& os, const Event& e)
+	//DELETE THIS
+	/*inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
+	}*/
+
+	inline std::string format_as(const Event& e)
+	{
+		return e.ToString();
 	}
 }

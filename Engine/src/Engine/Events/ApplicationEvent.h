@@ -2,20 +2,19 @@
 
 #include "Event.h"
 
-#include <sstream>
 
 namespace Engine {
 	
-	class ENG_API WindoResizeEvent : public Event
+	class ENG_API WindowResizeEvent : public Event
 	{
 	public:
-		WindoResizeEvent(unsigned int width, unsigned int height)
+		WindowResizeEvent(unsigned int width, unsigned int height)
 			: m_Width(width), m_Height(height) {}
 
 		inline unsigned int GetWidth() const { return m_Width; }
 		inline unsigned int GetHeight() const { return m_Height; }
 
-		std::string ToString()
+		std::string ToString() const
 		{
 			std::stringstream ss;
 			ss << "WindowResizeEvent: " << m_Width << ", " << m_Height;

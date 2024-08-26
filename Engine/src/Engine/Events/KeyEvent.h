@@ -2,8 +2,6 @@
 
 #include "Event.h"
 
-#include <sstream>
-
 namespace Engine {
 
 	class ENG_API KeyEvent : public Event 
@@ -18,6 +16,7 @@ namespace Engine {
 
 		int m_KeyCode;
 	};
+
 
 	class ENG_API KeyPressedEvent : public KeyEvent
 	{
@@ -38,6 +37,7 @@ namespace Engine {
 	private:
 		int m_RepeatCount;
 	};
+
 
 	class ENG_API KeyReleasedEvent : public KeyEvent
 	{

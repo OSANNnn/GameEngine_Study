@@ -1,8 +1,8 @@
 #pragma once
 
-#include <memory>
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"
 
 
 namespace Engine {
@@ -32,4 +32,4 @@ namespace Engine {
 #define ENG_INFO(...)  ::Engine::Log::GetClientLogger()->info(__VA_ARGS__)
 #define ENG_WARN(...)  ::Engine::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define ENG_ERROR(...) ::Engine::Log::GetClientLogger()->error(__VA_ARGS__)
-#define ENG_FATAL(...) ::Engine::Log::GetClientLogger()->fatal(__VA_ARGS__)
+#define ENG_FATAL(...) ::Engine::Log::GetClientLogger()->critical(__VA_ARGS__)
