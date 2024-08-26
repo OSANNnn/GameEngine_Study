@@ -10,3 +10,5 @@
 	#error OS not supported!
 
 #endif // ENG_PLATFORM_WINDOWS
+
+#define BIT(x) (1 << x)

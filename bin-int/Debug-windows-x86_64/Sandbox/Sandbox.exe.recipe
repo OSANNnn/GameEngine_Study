@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>E:\repos\GameEngine_Study\bin\x64-Debug\Engine\Engine.dll</FullPath>
+      <FullPath>E:\repos\GameEngine_Study\bin\Debug-windows-x86_64\Engine\Engine.dll</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>E:\repos\GameEngine_Study\bin\x64-Debug\Sandbox\Sandbox.exe</FullPath>
+      <FullPath>E:\repos\GameEngine_Study\bin\Debug-windows-x86_64\Sandbox\Sandbox.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
